@@ -1,0 +1,71 @@
+.focus-button {
+  font-family: Roboto;
+  font-size: 2rem !important;
+  font-weight: 600;
+
+  color: white !important;
+  
+  position: absolute;
+  top: 50%;
+  right: 15px !important;
+  transform: translateY(-50%);
+
+  cursor: pointer;
+}
+
+.form-input {
+  padding-right: 5rem !important;
+}
+
+.form-input button{
+  right: 5rem !important;
+}
+
+
+.sidebar-right > div[role="complementary"] {
+  transition: all 0.25s ease-in-out !important;
+}
+
+.sidebar-right > div[role="main"] {
+  transition: all 0.25s ease-in-out !important;
+}
+
+#version-switcher > ul{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: max-content;
+  transition: all 0.35s ease-in-out !important;
+}
+#version-switcher > ul:hover{
+  padding-block: 0.25em !important;
+  margin: 0 !important;
+}
+
+#doc-versions{
+  transform: translateY(-100%) !important;
+}
+
+#doc-languages{
+  transform: translateY(-200%) !important;
+}
+
+#faq-link{
+  transform: translateY(-300%) !important;
+}
+
+#backtotop-link{
+  z-index: 999;
+}
+
+h2{
+  font-size: 2.6rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  color: #44B78B;
+  margin-bottom: 2rem !important;
+}
+
+.button-container{
+  display: none;
+}
