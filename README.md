@@ -1,7 +1,7 @@
 # BetterDjangoDocs
 
 ## Description
-BetterDjangoDocs is a tool that improves the user interface (UI) of the Django documentation website, making it more user-friendly and enhancing the overall user experience for developers working with Django.
+BetterDjangoDocs is a chrome extension that improves the user interface (UI) of the Django documentation website, making it more user-friendly and enhancing the overall user experience for developers working with Django.
 
 ## Table of Contents
 - [Usage](#usage)
@@ -11,7 +11,7 @@ BetterDjangoDocs is a tool that improves the user interface (UI) of the Django d
 
 ## Usage
 
-To manually load and use the "BetterDjangoDocs" extension to enhance the UI of the Django documentation website, follow these steps:
+To manually load and use the "BetterDjangoDocs" chrome extension to enhance the UI of the Django documentation website, follow these steps:
 
 1. **Clone the Repository:**
    ```bash
