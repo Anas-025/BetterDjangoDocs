@@ -25,39 +25,24 @@ searchContainer.appendChild(btn);
 
 let state = "open";
 
-btn.onclick = async () => {
-  if (state === "open") {
+document.body.addEventListener("keydown", e => e.key === "b" && handleLoadExtension());
+
+const handleLoadExtension = () => {
+  if (window.localStorage.getItem("state") === "closed") {
     document.head.appendChild(link);
-
-    state = "closed";
-    window.localStorage.setItem("state", state);
-  } else {
+    main.appendChild(searchContainer);
+    window.localStorage.setItem("state", "open");
+  } else if (window.localStorage.getItem("state") === "open") {
     link.remove();
-
-    state = "open";
-    window.localStorage.setItem("state", state);
+    nav.appendChild(searchContainer);
+    window.localStorage.setItem("state", "closed");
   }
 };
 
-document.body.addEventListener("keydown", (e) => {
-  if (e.key === "b" && state === "open") {
-    document.head.appendChild(link);
-    main.appendChild(searchContainer);
-    
-    state = "closed";
-    window.localStorage.setItem("state", state);
-  } else if (e.key === "b" && state === "closed") {
-    link.remove();
-    nav.appendChild(searchContainer);
-
-    state = "open";
-    window.localStorage.setItem("state", state);
-  }
-});
+btn.onclick = handleLoadExtension;
 
 window.onload = () => {
   const state = window.localStorage.getItem("state");
-  console.log(state);
 
   if (state === "closed") {
     document.head.appendChild(link);
@@ -69,7 +54,6 @@ window.onload = () => {
   }
 
   const setup = document.getElementById("setup");
-  console.log("setup");
   if (!setup) {
     const link = document.createElement("link");
     link.rel = "stylesheet";

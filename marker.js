@@ -6,7 +6,6 @@ window.onload = () => {
   addButtonToSections(sections);
 
   const setup = document.getElementById("setup");
-  console.log("setup")
   if (!setup) {
     const link = document.createElement("link");
     link.rel = "stylesheet";

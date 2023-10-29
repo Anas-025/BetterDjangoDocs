@@ -4,9 +4,6 @@
   --yellow: #ffc72c;
   --blue: #299eff;
 }
-html, body{
-  scroll-behavior: smooth;
-}
 body{
   overflow: hidden !important;
 }
